@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73E9A5C1FBC13EC00DE8569 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A5B1FBC13EC00DE8569 /* MessagesViewController.swift */; };
+		F73E9A5E1FBC144800DE8569 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A5D1FBC144800DE8569 /* UsersViewController.swift */; };
+		F73E9A601FBC158900DE8569 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A5F1FBC158900DE8569 /* LoginViewController.swift */; };
+		F73E9A621FBC169800DE8569 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */; };
+		F73E9A641FBC240700DE8569 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A631FBC240700DE8569 /* MessageCell.swift */; };
+		F73E9A661FBE4D7B00DE8569 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A651FBE4D7B00DE8569 /* UserCell.swift */; };
 		F7B0A31C1FBBCDF9007139A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */; };
 		F7B0A31E1FBBCDF9007139A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */; };
 		F7B0A3211FBBCDF9007139A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B0A31F1FBBCDF9007139A1 /* Main.storyboard */; };
@@ -14,6 +20,8 @@
 		F7B0A3261FBBCDF9007139A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B0A3241FBBCDF9007139A1 /* LaunchScreen.storyboard */; };
 		F7B0A3311FBBCDF9007139A1 /* SocialNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A3301FBBCDF9007139A1 /* SocialNetworkingTests.swift */; };
 		F7B0A33C1FBBCDF9007139A1 /* SocialNetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A33B1FBBCDF9007139A1 /* SocialNetworkingUITests.swift */; };
+		F7B0A34A1FBBCE0C007139A1 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A3491FBBCE0C007139A1 /* NetworkConnectivity.swift */; };
+		F7B0A34C1FBBCE2B007139A1 /* MessageStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A34B1FBBCE2B007139A1 /* MessageStructures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F73E9A5B1FBC13EC00DE8569 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		F73E9A5D1FBC144800DE8569 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		F73E9A5F1FBC158900DE8569 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
+		F73E9A631FBC240700DE8569 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		F73E9A651FBE4D7B00DE8569 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		F7B0A3181FBBCDF9007139A1 /* SocialNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		F7B0A3371FBBCDF9007139A1 /* SocialNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B0A33B1FBBCDF9007139A1 /* SocialNetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkingUITests.swift; sourceTree = "<group>"; };
 		F7B0A33D1FBBCDF9007139A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7B0A3491FBBCE0C007139A1 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		F7B0A34B1FBBCE2B007139A1 /* MessageStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStructures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +115,15 @@
 			children = (
 				F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */,
 				F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */,
+				F7B0A3491FBBCE0C007139A1 /* NetworkConnectivity.swift */,
+				F7B0A34B1FBBCE2B007139A1 /* MessageStructures.swift */,
 				F7B0A31F1FBBCDF9007139A1 /* Main.storyboard */,
+				F73E9A651FBE4D7B00DE8569 /* UserCell.swift */,
+				F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */,
+				F73E9A5F1FBC158900DE8569 /* LoginViewController.swift */,
+				F73E9A5D1FBC144800DE8569 /* UsersViewController.swift */,
+				F73E9A5B1FBC13EC00DE8569 /* MessagesViewController.swift */,
+				F73E9A631FBC240700DE8569 /* MessageCell.swift */,
 				F7B0A3221FBBCDF9007139A1 /* Assets.xcassets */,
 				F7B0A3241FBBCDF9007139A1 /* LaunchScreen.storyboard */,
 				F7B0A3271FBBCDF9007139A1 /* Info.plist */,
@@ -259,8 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73E9A621FBC169800DE8569 /* SendMessageViewController.swift in Sources */,
+				F73E9A601FBC158900DE8569 /* LoginViewController.swift in Sources */,
+				F73E9A5C1FBC13EC00DE8569 /* MessagesViewController.swift in Sources */,
+				F73E9A5E1FBC144800DE8569 /* UsersViewController.swift in Sources */,
 				F7B0A31E1FBBCDF9007139A1 /* ViewController.swift in Sources */,
+				F7B0A34A1FBBCE0C007139A1 /* NetworkConnectivity.swift in Sources */,
 				F7B0A31C1FBBCDF9007139A1 /* AppDelegate.swift in Sources */,
+				F7B0A34C1FBBCE2B007139A1 /* MessageStructures.swift in Sources */,
+				F73E9A661FBE4D7B00DE8569 /* UserCell.swift in Sources */,
+				F73E9A641FBC240700DE8569 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
