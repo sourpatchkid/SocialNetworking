@@ -14,18 +14,12 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let username = UserDefaults.standard.string(forKey: "username") {
             usernameTextField.text = username
-        }
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "LoginSegue" {
-            let TabBarViewController = segue.destination
-            TabBarViewController.title = "Home"
         }
     }
     
@@ -35,15 +29,17 @@ class LoginViewController: UIViewController {
         UserDefaults.standard.set(usernameTextField.text ?? "", forKey: "username")
         UserDefaults.standard.synchronize()
         let user: User? = User(name: usernameTextField.text ?? "", password: passwordTextField.text ?? "")
+        self.activityIndicator.startAnimating()
         DispatchQueue.main.async {
-            NetworkConnectivity.login(user: user!)
-            print("login button, userList?.users:")
-            print(NetworkConnectivity.userList?.users)
+            NetworkConnectivity.login(user: user!) 
+            self.activityIndicator.stopAnimating()
+            if NetworkConnectivity.messageList != nil {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            }
         }
-        performSegue(withIdentifier: "LoginSegue", sender: nil)
     }
-    
 }
+
 
 extension LoginViewController: UITextFieldDelegate {
     
@@ -51,7 +47,6 @@ extension LoginViewController: UITextFieldDelegate {
         print("begin")
     }
     
-    // handling return button should be in "textFieldShouldReturn".
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == usernameTextField {
             passwordTextField.becomeFirstResponder()

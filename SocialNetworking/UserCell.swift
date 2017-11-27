@@ -11,17 +11,24 @@ import UIKit
 class UserCell: UITableViewCell {
     
     @IBOutlet weak var UserNameCell: UILabel!
+    @IBOutlet weak var RealNameCell: UILabel!
     
+    var someUser: String?
     
-    
+  
     override func prepareForReuse() {
         super.prepareForReuse()
         UserNameCell.text = nil
-    
     }
     
     func configure(someUser: String?){
-        UserNameCell.text = someUser
+        
+        UserNameCell.text = NetworkConnectivity.createHandle(someUser: someUser!)
+        RealNameCell.text = NetworkConnectivity.createRealName(someUser: someUser!)
+        self.someUser = someUser
     }
+    
+   
+    
 }
 

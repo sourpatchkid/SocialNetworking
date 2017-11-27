@@ -17,7 +17,7 @@ struct Token: Codable {
     let token: String
 }
 
-struct usersList: Codable {
+struct UsersList: Codable {
     var users: [String]
     
     init(users: [String]) {
@@ -34,6 +34,28 @@ struct Message: Codable {
     let id: String?
     let replyTo: String?
     let likedBy: [String]?
+}
+
+struct MessageList: Codable {
+    var messages: [Message]
+    
+    init(messages: [Message]) {
+        self.messages = messages
+    }
+}
+
+struct DirectMessage: Codable {
+    let to: String?
+    let from: String?
+    let message: Message?
+}
+
+struct DirectMessageList: Codable {
+    var directMessages: [DirectMessage]
+    
+    init (directMessages: [DirectMessage]) {
+        self.directMessages = directMessages
+    }
 }
 
 

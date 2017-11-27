@@ -12,11 +12,20 @@ class UsersViewController: UIViewController {
     
     @IBOutlet weak var userView: UITableView!
     
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         userView.dataSource = self
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? SendMessageViewController else {return}
+        guard let source = sender as? UserCell else { return }
+        destination.to = source.someUser
+        destination.replyToID = nil
+    }
+    
 }
 
 extension UsersViewController: UITableViewDataSource {

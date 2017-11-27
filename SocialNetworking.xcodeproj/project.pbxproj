@@ -13,8 +13,11 @@
 		F73E9A621FBC169800DE8569 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */; };
 		F73E9A641FBC240700DE8569 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A631FBC240700DE8569 /* MessageCell.swift */; };
 		F73E9A661FBE4D7B00DE8569 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E9A651FBE4D7B00DE8569 /* UserCell.swift */; };
+		F74A579B1FCBF36D0045456C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A579A1FCBF36D0045456C /* ImageCell.swift */; };
+		F78A808B1FCAB1B50050B13B /* ViewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A808A1FCAB1B50050B13B /* ViewMessageViewController.swift */; };
+		F78A808D1FCBDEB40050B13B /* MessageHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A808C1FCBDEB40050B13B /* MessageHeaderCell.swift */; };
+		F78A808F1FCBDEC50050B13B /* MessageTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78A808E1FCBDEC50050B13B /* MessageTextCell.swift */; };
 		F7B0A31C1FBBCDF9007139A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */; };
-		F7B0A31E1FBBCDF9007139A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */; };
 		F7B0A3211FBBCDF9007139A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B0A31F1FBBCDF9007139A1 /* Main.storyboard */; };
 		F7B0A3231FBBCDF9007139A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B0A3221FBBCDF9007139A1 /* Assets.xcassets */; };
 		F7B0A3261FBBCDF9007139A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7B0A3241FBBCDF9007139A1 /* LaunchScreen.storyboard */; };
@@ -48,9 +51,12 @@
 		F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
 		F73E9A631FBC240700DE8569 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		F73E9A651FBE4D7B00DE8569 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F74A579A1FCBF36D0045456C /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		F78A808A1FCAB1B50050B13B /* ViewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMessageViewController.swift; sourceTree = "<group>"; };
+		F78A808C1FCBDEB40050B13B /* MessageHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeaderCell.swift; sourceTree = "<group>"; };
+		F78A808E1FCBDEC50050B13B /* MessageTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextCell.swift; sourceTree = "<group>"; };
 		F7B0A3181FBBCDF9007139A1 /* SocialNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7B0A3201FBBCDF9007139A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7B0A3221FBBCDF9007139A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B0A3251FBBCDF9007139A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,16 +120,19 @@
 			isa = PBXGroup;
 			children = (
 				F7B0A31B1FBBCDF9007139A1 /* AppDelegate.swift */,
-				F7B0A31D1FBBCDF9007139A1 /* ViewController.swift */,
-				F7B0A3491FBBCE0C007139A1 /* NetworkConnectivity.swift */,
-				F7B0A34B1FBBCE2B007139A1 /* MessageStructures.swift */,
 				F7B0A31F1FBBCDF9007139A1 /* Main.storyboard */,
-				F73E9A651FBE4D7B00DE8569 /* UserCell.swift */,
-				F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */,
+				F78A808C1FCBDEB40050B13B /* MessageHeaderCell.swift */,
+				F78A808E1FCBDEC50050B13B /* MessageTextCell.swift */,
+				F7B0A34B1FBBCE2B007139A1 /* MessageStructures.swift */,
 				F73E9A5F1FBC158900DE8569 /* LoginViewController.swift */,
-				F73E9A5D1FBC144800DE8569 /* UsersViewController.swift */,
-				F73E9A5B1FBC13EC00DE8569 /* MessagesViewController.swift */,
+				F7B0A3491FBBCE0C007139A1 /* NetworkConnectivity.swift */,
 				F73E9A631FBC240700DE8569 /* MessageCell.swift */,
+				F73E9A5B1FBC13EC00DE8569 /* MessagesViewController.swift */,
+				F74A579A1FCBF36D0045456C /* ImageCell.swift */,
+				F73E9A611FBC169800DE8569 /* SendMessageViewController.swift */,
+				F78A808A1FCAB1B50050B13B /* ViewMessageViewController.swift */,
+				F73E9A651FBE4D7B00DE8569 /* UserCell.swift */,
+				F73E9A5D1FBC144800DE8569 /* UsersViewController.swift */,
 				F7B0A3221FBBCDF9007139A1 /* Assets.xcassets */,
 				F7B0A3241FBBCDF9007139A1 /* LaunchScreen.storyboard */,
 				F7B0A3271FBBCDF9007139A1 /* Info.plist */,
@@ -287,11 +296,14 @@
 				F73E9A601FBC158900DE8569 /* LoginViewController.swift in Sources */,
 				F73E9A5C1FBC13EC00DE8569 /* MessagesViewController.swift in Sources */,
 				F73E9A5E1FBC144800DE8569 /* UsersViewController.swift in Sources */,
-				F7B0A31E1FBBCDF9007139A1 /* ViewController.swift in Sources */,
+				F78A808D1FCBDEB40050B13B /* MessageHeaderCell.swift in Sources */,
+				F78A808F1FCBDEC50050B13B /* MessageTextCell.swift in Sources */,
 				F7B0A34A1FBBCE0C007139A1 /* NetworkConnectivity.swift in Sources */,
+				F78A808B1FCAB1B50050B13B /* ViewMessageViewController.swift in Sources */,
 				F7B0A31C1FBBCDF9007139A1 /* AppDelegate.swift in Sources */,
 				F7B0A34C1FBBCE2B007139A1 /* MessageStructures.swift in Sources */,
 				F73E9A661FBE4D7B00DE8569 /* UserCell.swift in Sources */,
+				F74A579B1FCBF36D0045456C /* ImageCell.swift in Sources */,
 				F73E9A641FBC240700DE8569 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +471,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RU33KF3E3;
 				INFOPLIST_FILE = SocialNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wpa.SocialNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +487,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RU33KF3E3;
 				INFOPLIST_FILE = SocialNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wpa.SocialNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
